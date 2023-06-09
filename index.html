@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CompraLine.co</title>
+    <style>
+        /* Estilos CSS para la página web */
+        body {
+            font-family: Barlow Condensed;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* buscador */
+        .buscador {
+      text-align: right;
+      padding: 10px;
+      left: 20px;
+      z-index: 1;
+    }
+
+    .buscador input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-family: Barlow Condensed;
+      font-size: 16px;
+      color:#000000;
+      background-color: #ffffff94;
+      border-color: #22e708;
+      border-radius: 10px;
+    }
+
+    .buscador input[type="submit"] {
+      padding: 10px 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+      font-family: Barlow Condensed;
+      font-size: 16px;
+      border-radius: 10px;
+      
+
+    }
+
+    .buscador input:hover.bus{
+        color: #22e708;
+        background-color: rgba(34, 4, 4, 0.822);
+    }
+
+    /*banner*/
+        .banner {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background-image: url(Img/portada_Mesa\ de\ trabajo\ 1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 3px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            font-family: Barlow Condensed;
+            font-size: 16px;
+            padding: 10px;
+            margin-right: 5px;
+        }
+
+        .menu a:hover {
+            color: #ff0000;
+             background-color: rgba(34, 4, 4, 0.822);
+        }
+
+        .botones{
+        display: flex;
+        justify-content: center;
+
+        }
+
+        .botones button{
+        margin: 0 5px;
+        padding: 5px 5px;
+        border: none;
+        border-radius:0;
+        cursor: pointer
+        } 
+
+        /* boton belleza */
+
+         .bnt_higiene{
+        
+          margin-top: 50px;
+          background: none;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+            
+        }
+
+        .bnt_higiene img {
+         width: 150px;
+         height: auto;
+         
+        }
+
+        .bnt_higiene:hover div{
+            color: #bdff08;
+        }
+
+        .bnt_higiene div {
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-size: 20px;
+        letter-spacing: 1px;
+        display: block;
+        }
+
+        /* boton hogar*/
+
+        .bnt_hogar{
+
+        text-align: center;
+        margin-top: 50px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+       
+        }
+
+        .bnt_hogar img {
+         width: 150px;
+         height: auto;
+        }
+
+        .bnt_hogar div{
+        text-align: center;
+        font-family: Barlow Condensed;
+        font-size: 20px;
+        letter-spacing: 1px;
+        display: block;
+        }
+
+        .bnt_hogar:hover div{
+            color: #bdff08;
+        }
+
+       
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d14444;
+            color: #fff;
+            height: 100px;
+        }
+
+        footer a{
+            color: #fff;
+            font-family: Barlow Condensed;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <script>
+        function abrirHogar() {
+          window.location.href = 'hogar.html';
+        }
+      </script>
+
+    <script>
+        function abrirBelleza(){
+            window.location.href = 'belleza.html';
+        }
+    </script>
+    
+
+    <div class="banner">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contactos</a></li>
+            </ul>
+        </nav>
+
+        <div class="buscador">
+            <form action="#" method="get">
+                <input type="text" name="search" placeholder="Que buscas..." required>
+                <input class= "bus" type="submit" value="Buscar">
+              </form>
+        </div>
+
+    </div>
+
+    <div class="botones">
+
+        <button class="bnt_higiene" onclick="abrirBelleza()">
+            <img src="Img/bnt_higiene_Mesa de trabajo 1.png">
+            <div class="bella"> Belleza </div>
+        </button>
+        
+        <button class="bnt_hogar" onclick="abrirHogar()">
+            <img src="Img/bnt_hogar_Mesa de trabajo 1.png">
+            <div class="home"> Hogar </div>
+        </button>
+
+    </div>
+
+    <footer>
+      <a> Redes Sociales </a>
+    </footer>
+</body>
+</html>

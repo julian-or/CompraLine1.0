@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Hogar</title>
+  <style>
+      /* Estilos CSS para la página web */
+      body {
+          font-family: Barlow Condensed;
+          margin: 0;
+          padding: 0;
+      }
+
+      /* buscador */
+      .buscador {
+    text-align: right;
+    padding: 10px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .buscador input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    color:#000000;
+    background-color: #ffffff94;
+    border-color: #22e708;
+    border-radius: 10px;
+  }
+
+  .buscador input[type="submit"] {
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: Barlow Condensed;
+    font-size: 16px;
+    border-radius: 10px;
+    
+
+  }
+
+  .buscador input:hover.bus{
+      color: #22e708;
+      background-color: rgba(34, 4, 4, 0.822);
+  }
+
+  /*boton inicio*/
+  .volverInicio{
+    background: none;
+    border: none;
+   
+  }
+
+  /*banner*/
+      .banner {
+          position: relative;
+          width: 100%;
+          height: 400px;
+          background-image: url(Img/portada_Mesa\ de\ trabajo\ 1.jpg);
+          background-size: cover;
+          background-position: center;
+      }
+
+      .menu {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          z-index: 1;
+      }
+
+      .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .menu li {
+          display: inline-block;
+          margin-right: 3px;
+      }
+
+      .menu a {
+          text-decoration: none;
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          font-family: Barlow Condensed;
+          font-size: 16px;
+          padding: 10px;
+          margin-right: 5px;
+      }
+
+      .menu a:hover {
+          color: #ff0000;
+           background-color: rgba(34, 4, 4, 0.822);
+      }
+
+      .productos_hogar{
+         color: #ff0000;
+         text-align: center;
+         padding:20px;
+         height: auto;
+         font-family: Barlow Condensed;
+         display: flex;
+         justify-content: center;
+         width: auto;
+      }
+
+      footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #d14444;
+            color: #fff;
+            height: 100px;
+        }
+
+        footer a{
+            color: #fff;
+            font-family: Barlow Condensed;
+            font-size: 30px;
+        }
+
+  </style>
+</head>
+
+<body>
+
+  <script> 
+  function volverInicio(){
+    window.location.href = 'index.html';
+  }
+  </script>
+
+  <div class="banner">
+    <nav class="menu">
+        <ul>
+
+            <button class="volverInicio" onclick="volverInicio()">
+            <li><a href="#">Inicio</a></li></button>
+            
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <div class="buscador">
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="Que buscas..." required>
+            <input class= "bus" type="submit" value="Buscar">
+          </form>
+    </div>
+</div>
+
+<div class="productos_hogar">
+  <h3>Productos para el hogar</h3>
+</div>
+
+<footer>
+  <a> Redes Sociales </a>
+</footer>
+
+</body>
+
+</html>
